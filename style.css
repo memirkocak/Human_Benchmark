@@ -1,0 +1,16 @@
+.reactionTime{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 30dvh;
+    left: 50dvw;
+    transform: translatey(-50%);
+    transform: translateX(-50%);
+}
+.reactionTime-timeBtn{
+    width: 60dvw;
+    height: 30dvh;
+    background-color: rgb(232, 117, 117);
+    font-size: 100px;
+}

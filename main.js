@@ -53,3 +53,150 @@ const reactionTime = document.querySelector('#reactionTime');
 }
 reactionTime()
 
+function verbalMemory(){
+
+    const words = [
+        { word: "apple" },
+        { word: "banana" },
+        { word: "cat" },
+        { word: "dog" },
+        { word: "elephant" },
+        { word: "flower" },
+        { word: "guitar" },
+        { word: "house" },
+        { word: "island" },
+        { word: "jungle" },
+        { word: "kite" },
+        { word: "lion" },
+        { word: "mountain" },
+        { word: "notebook" },
+        { word: "ocean" },
+        { word: "pencil" },
+        { word: "queen" },
+        { word: "river" },
+        { word: "sun" },
+        { word: "tree" },
+        { word: "umbrella" },
+        { word: "violin" },
+        { word: "window" },
+        { word: "xylophone" },
+        { word: "yacht" },
+        { word: "zebra" },
+        { word: "airplane" },
+        { word: "book" },
+        { word: "car" },
+        { word: "desk" },
+        { word: "ear" },
+        { word: "frog" },
+        { word: "glasses" },
+        { word: "hat" },
+        { word: "ice" },
+        { word: "jacket" },
+        { word: "key" },
+        { word: "lamp" },
+        { word: "moon" },
+        { word: "necklace" },
+        { word: "orange" },
+        { word: "pizza" },
+        { word: "quilt" },
+        { word: "rain" },
+        { word: "shoe" },
+        { word: "table" },
+        { word: "umbrella" },
+        { word: "vase" },
+        { word: "watch" },
+        { word: "x-ray" },
+        { word: "yogurt" },
+        { word: "zoo" },
+        { word: "ball" },
+        { word: "cup" },
+        { word: "door" },
+        { word: "engine" },
+        { word: "forest" },
+        { word: "garden" },
+        { word: "horse" },
+        { word: "internet" },
+        { word: "juice" },
+        { word: "kangaroo" },
+        { word: "lemon" },
+        { word: "mirror" },
+        { word: "newspaper" },
+        { word: "octopus" },
+        { word: "piano" },
+        { word: "quokka" },
+        { word: "rabbit" },
+        { word: "snake" },
+        { word: "train" },
+        { word: "umbrella" },
+        { word: "volcano" },
+        { word: "whale" },
+        { word: "xenon" },
+        { word: "yawn" },
+        { word: "zipper" },
+        { word: "ant" },
+        { word: "box" },
+        { word: "chair" },
+        { word: "dolphin" },
+        { word: "eagle" },
+        { word: "fire" },
+        { word: "globe" },
+        { word: "heart" },
+        { word: "ink" },
+        { word: "jar" },
+        { word: "kangaroo" },
+        { word: "leopard" },
+        { word: "milk" },
+        { word: "nest" },
+        { word: "owl" },
+        { word: "pen" },
+        { word: "queen" },
+        { word: "rose" },
+        { word: "stone" },
+        { word: "telephone" },
+        { word: "umbrella" },
+        { word: "violin" },
+        { word: "wolf" },
+        { word: "xylophone" },
+        { word: "yak" },
+        { word: "zucchini" }
+      ];
+
+    const verbalMemoryBtn = document.querySelector('#verbalMemory')
+
+    verbalMemoryBtn.addEventListener('click',()=>{
+        header.remove()
+        main.remove()
+        footer.remove()
+
+        body.innerHTML=`
+            <div class="verbalMemory">
+            <button id="startBtn">START</button>
+
+            <div class="verbalMemoryGame">
+                <div>
+                    <p>Lives | <span>3</span></p>
+                    <p>Score | <span>0</span></p>
+                </div>
+                
+                <p id='word'>word</p>
+
+                <div>
+                    <button id="seenBtn">SEEN</button>
+                    <button id="newBtn">NEW</button>
+                </div>
+            </div>
+        </div>
+        `
+
+        const startBtn = document.querySelector('#startBtn')
+        const verbalMemoryGame = document.querySelector('.verbalMemoryGame')
+        // const word = document.
+
+        startBtn.addEventListener('click',()=>{
+            verbalMemoryGame.style.display = 'flex'
+            startBtn.style.display = 'none'
+        })
+
+    })
+}
+verbalMemory()

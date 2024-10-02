@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .reactionTime{
     display: flex;
     align-items: center;
@@ -13,4 +19,42 @@
     height: 30dvh;
     background-color: rgb(232, 117, 117);
     font-size: 100px;
+}
+
+.verbalMemoryGame{
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.verbalMemory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50dvh;
+    transform: translateY(-50%);
+    flex-direction: column;
+}
+
+#startBtn{
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(77,42,112);
+    background: linear-gradient(180deg, rgba(77,42,112,1) 0%, rgba(255,0,205,1) 52%);
+}
+
+#seenBtn{
+    font-size: 30px;
+    padding:20px;
+    border-radius:15px;
+}
+
+#newBtn{
+    font-size: 30px;
+    padding:20px;
+    border-radius:15px;
 }

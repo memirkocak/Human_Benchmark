@@ -174,8 +174,8 @@ function verbalMemory(){
 
             <div class="verbalMemoryGame">
                 <div>
-                    <p>Lives | <span>3</span></p>
-                    <p>Score | <span>0</span></p>
+                    <p>Lives | <span id='livesSpan'>3</span></p>
+                    <p>Score | <span id='scoreSpan'>0</span></p>
                 </div>
                 
                 <p id='word'>word</p>
@@ -190,13 +190,26 @@ function verbalMemory(){
 
         const startBtn = document.querySelector('#startBtn')
         const verbalMemoryGame = document.querySelector('.verbalMemoryGame')
-        // const word = document.
-
+        const word = document.querySelector('#word')
+        let wordsArr = [];
+        const newWordBtn = document.querySelector('#newBtn')
+        const seenWordBtn = document.querySelector('#seenBtn')
+        const livesSpan = document.querySelector('#livesSpan')
+        const scoreSpan = document.querySelector('#scoreSpan')
+        let lives = 3;
+        let score = 0;
         startBtn.addEventListener('click',()=>{
             verbalMemoryGame.style.display = 'flex'
             startBtn.style.display = 'none'
-        })
+            let randomWord = Math.floor(Math.random() * words.length)
+            word.textContent = words[randomWord].word
 
+            newWordBtn.addEventListener('click',()=>{
+                //faire une verification pour dire si il y a le mot dans le wordsArr on enleve une vie (lives) si le mot n est pas dans le wordsArr on l ajoute dans (wordsArr)
+            })
+
+        })
+                                    
     })
 }
 verbalMemory()
